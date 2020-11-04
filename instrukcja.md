@@ -1,7 +1,9 @@
-Lekcja 1 – Markdown lekki język znaczników
+[TOC]
+
+
+
 Spis treści
-Lekcja 1 – Markdown lekki język znaczników....................................................................................1
-Wstęp...............................................................................................................................................1
+Lekcja 1 – Markdown lekki język znaczników....................................................................................1 Wstęp...............................................................................................................................................1
 Podstawy składni.............................................................................................................................3
 Definiowanie nagłówków...........................................................................................................3
 Definiowanie list.........................................................................................................................4
@@ -13,22 +15,24 @@ Kod źródłowy dla różnych języków programowania...........................
 Tworzenie spisu treści na podstawie nagłówków.......................................................................6
 Edytory dedykowane.......................................................................................................................7
 Pandoc – system do konwersji dokumentów Markdown do innych formatów...............................8
-Lekcja 2 – Git – system kontroli wersji................................................................................................9
-Git - podstawowe cechy...................................................................................................................9
-Idea pracy:........................................................................................................................................9
-Git – tworzenie pustego archiwum lokalnego...............................................................................11
-Zadania do wykonania na punkty.......................................................................................................21
-Zadanie 1 – 2pkt............................................................................................................................21
-Zadanie 2 – 4pkt............................................................................................................................21
-Zadanie 3 - 4pkt.............................................................................................................................21
-Wstęp
+
+
+
+
+
+
+
+# Wstęp
+
 Obecnie powszechnie wykorzystuje się języki ze znacznikami do opisania dodatkowych informacji
 umieszczanych w plikach tekstowych. Z pośród najbardziej popularnych można wspomnieć o:
+
 1. html – służącym do opisu struktury informacji zawartych na stronach internetowych,
 2. Tex (Latex) – poznany na zajęciach język do „profesjonalnego” składania tekstów,
 3. XML (Extensible Markup Language) - uniwersalnym języku znaczników przeznaczonym do
-reprezentowania różnych danych w ustrukturalizowany sposób.
-Przykład kodu html i jego interpretacja w przeglądarce:
+   reprezentowania różnych danych w ustrukturalizowany sposób.
+   Przykład kodu html i jego interpretacja w przeglądarce:
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -93,51 +97,72 @@ i tak w 2016 r. opublikowano dokument RFC 7764 który zawiera opis kilku odmian 
 • CommonMark,
 • GitHub Flavored Markdown (GFM),
 • Markdown Extra.
-Podstawy składni
+
+# Podstawy składni
+
 Podany link: https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet zawiera opis
 podstawowych elementów składni w języku angielskim. Poniżej zostanie przedstawiony ich krótki
 opis w języku polskim.
-Definiowanie nagłówków
+
+## Definiowanie nagłówków
+
 W tym celu używamy znaku kratki
 Lewe okno zawiera kod źródłowy – prawe -podgląd przetworzonego tekstu
-Definiowanie list
+
+## Definiowanie list
+
 Listy numerowane definiujemy wstawiając numery kolejnych pozycji zakończone kropką.
 Listy nienumerowane definiujemy znakami: *,+,-
-Wyróżnianie tekstu
-Tabele
+
+## Wyróżnianie tekstu
+
+## Tabele
+
 Centrowanie zawartości kolumn realizowane jest poprzez odpowiednie użycie znaku dwukropka:
-Odnośniki do zasobów
+
+## Odnośniki do zasobów
+
 [odnośnik do zasobów](www.gazeta.pl)
 [odnośnik do pliku](LICENSE.md)
 [odnośnik do kolejnego zasobu][1]
+
 [1]: http://google,com
-Obrazki
+
+## Obrazki
+
 ![alt text](https://server.com/images/icon48.png "Logo 1") – obrazek z zasobów
 internetowych
 ![](logo.png) – obraz z lokalnych zasobów
-Kod źródłowy dla różnych języków programowania
-Tworzenie spisu treści na podstawie nagłówków
-Edytory dedykowane
+
+## Kod źródłowy dla różnych języków programowania
+
+## Tworzenie spisu treści na podstawie nagłówków
+
+## Edytory dedykowane
+
 Pracę nad dokumentami w formacie Markdown( rozszerzenie md) można wykonywać w
 dowolnym edytorze tekstowym. Aczkolwiek istnieje wiele dedykowanych narzędzi
-1. Edytor Typora - https://typora.io/
-2. Visual Studio Code z wtyczką „markdown preview”
-Pandoc – system do konwersji dokumentów Markdown do
-innych formatów
-Jest oprogramowanie typu open source służące do konwertowania dokumentów
-pomiędzy różnymi formatami.
-Pod poniższym linkiem można obejrzeć przykłady użycia:
-https://pandoc.org/demos.html
-Oprogramowanie to można pobrać z spod adresu: https://pandoc.org/installing.html
-Jeżeli chcemy konwertować do formatu latex i pdf trzeba doinstalować oprogramowanie
-składu Latex (np. Na windows najlepiej sprawdzi się Miktex https://miktex.org/)
-Gdyby podczas konwersji do formatu pdf pojawił się komunikat o niemożliwości
-znalezienia programu pdflatex rozwiązaniem jest wskazanie w zmiennej środowiskowej
-PATH miejsca jego położenia
-Pod adresem (https://gitlab.com/mniewins66/templatemn.git) znajduje się przykładowy plik
-Markdown z którego można wygenerować prezentację w formacie pdf wykorzystując
-klasę latexa beamer.
-W tym celu należy wydać polecenie z poziomu terminala:
-$pandoc templateMN.md -t beamer -o prezentacja.pdf
 
+1. Edytor Typora - https://typora.io/
+
+2. Visual Studio Code z wtyczką „markdown preview”
+
+   ##  Pandoc – system do konwersji dokumentów Markdown do
+
+   innych formatów
+   Jest oprogramowanie typu open source służące do konwertowania dokumentów
+   pomiędzy różnymi formatami.
+   Pod poniższym linkiem można obejrzeć przykłady użycia:
+   https://pandoc.org/demos.html
+   Oprogramowanie to można pobrać z spod adresu: https://pandoc.org/installing.html
+   Jeżeli chcemy konwertować do formatu latex i pdf trzeba doinstalować oprogramowanie
+   składu Latex (np. Na windows najlepiej sprawdzi się Miktex https://miktex.org/)
+   Gdyby podczas konwersji do formatu pdf pojawił się komunikat o niemożliwości
+   znalezienia programu pdflatex rozwiązaniem jest wskazanie w zmiennej środowiskowej
+   PATH miejsca jego położenia
+   Pod adresem (https://gitlab.com/mniewins66/templatemn.git) znajduje się przykładowy plik
+   Markdown z którego można wygenerować prezentację w formacie pdf wykorzystując
+   klasę latexa beamer.
+   W tym celu należy wydać polecenie z poziomu terminala:
+   $pandoc templateMN.md -t beamer -o prezentacja.pdf
 
