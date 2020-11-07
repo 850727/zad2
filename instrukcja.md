@@ -1,27 +1,5 @@
 [TOC]
 
-
-
-Spis treści
-Lekcja 1 – Markdown lekki język znaczników....................................................................................1 Wstęp...............................................................................................................................................1
-Podstawy składni.............................................................................................................................3
-Definiowanie nagłówków...........................................................................................................3
-Definiowanie list.........................................................................................................................4
-Wyróżnianie tekstu......................................................................................................................4
-Tabele..........................................................................................................................................5
-Odnośniki do zasobów................................................................................................................5
-Obrazki........................................................................................................................................5
-Kod źródłowy dla różnych języków programowania.................................................................5
-Tworzenie spisu treści na podstawie nagłówków.......................................................................6
-Edytory dedykowane.......................................................................................................................7
-Pandoc – system do konwersji dokumentów Markdown do innych formatów...............................8
-
-
-
-
-
-
-
 # Wstęp
 
 Obecnie powszechnie wykorzystuje się języki ze znacznikami do opisania dodatkowych informacji
@@ -98,6 +76,9 @@ i tak w 2016 r. opublikowano dokument RFC 7764 który zawiera opis kilku odmian 
 • GitHub Flavored Markdown (GFM),
 • Markdown Extra.
 
+
+
+
 # Podstawy składni
 
 Podany link: https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet zawiera opis
@@ -138,7 +119,7 @@ internetowych
 
 ## Tworzenie spisu treści na podstawie nagłówków
 
-## Edytory dedykowane
+# Edytory dedykowane
 
 Pracę nad dokumentami w formacie Markdown( rozszerzenie md) można wykonywać w
 dowolnym edytorze tekstowym. Aczkolwiek istnieje wiele dedykowanych narzędzi
@@ -147,22 +128,22 @@ dowolnym edytorze tekstowym. Aczkolwiek istnieje wiele dedykowanych narzędzi
 
 2. Visual Studio Code z wtyczką „markdown preview”
 
-   ##  Pandoc – system do konwersji dokumentów Markdown do
+  #  Pandoc – system do konwersji dokumentów Markdown do
 
-   innych formatów
-   Jest oprogramowanie typu open source służące do konwertowania dokumentów
-   pomiędzy różnymi formatami.
-   Pod poniższym linkiem można obejrzeć przykłady użycia:
-   https://pandoc.org/demos.html
-   Oprogramowanie to można pobrać z spod adresu: https://pandoc.org/installing.html
-   Jeżeli chcemy konwertować do formatu latex i pdf trzeba doinstalować oprogramowanie
-   składu Latex (np. Na windows najlepiej sprawdzi się Miktex https://miktex.org/)
-   Gdyby podczas konwersji do formatu pdf pojawił się komunikat o niemożliwości
-   znalezienia programu pdflatex rozwiązaniem jest wskazanie w zmiennej środowiskowej
-   PATH miejsca jego położenia
-   Pod adresem (https://gitlab.com/mniewins66/templatemn.git) znajduje się przykładowy plik
-   Markdown z którego można wygenerować prezentację w formacie pdf wykorzystując
-   klasę latexa beamer.
-   W tym celu należy wydać polecenie z poziomu terminala:
-   $pandoc templateMN.md -t beamer -o prezentacja.pdf
+  innych formatów
+  Jest oprogramowanie typu open source służące do konwertowania dokumentów
+  pomiędzy różnymi formatami.
+  Pod poniższym linkiem można obejrzeć przykłady użycia:
+  https://pandoc.org/demos.html
+  Oprogramowanie to można pobrać z spod adresu: https://pandoc.org/installing.html
+  Jeżeli chcemy konwertować do formatu latex i pdf trzeba doinstalować oprogramowanie
+  składu Latex (np. Na windows najlepiej sprawdzi się Miktex https://miktex.org/)
+  Gdyby podczas konwersji do formatu pdf pojawił się komunikat o niemożliwości
+  znalezienia programu pdflatex rozwiązaniem jest wskazanie w zmiennej środowiskowej
+  PATH miejsca jego położenia
+  Pod adresem (https://gitlab.com/mniewins66/templatemn.git) znajduje się przykładowy plik
+  Markdown z którego można wygenerować prezentację w formacie pdf wykorzystując
+  klasę latexa beamer.
+  W tym celu należy wydać polecenie z poziomu terminala:
+  $pandoc templateMN.md -t beamer -o prezentacja.pdf
 
