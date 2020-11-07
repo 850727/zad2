@@ -6,9 +6,14 @@ Obecnie powszechnie wykorzystuje się języki ze znacznikami do opisania dodatko
 umieszczanych w plikach tekstowych. Z pośród najbardziej popularnych można wspomnieć o:
 
 1. html – służącym do opisu struktury informacji zawartych na stronach internetowych,
+
 2. Tex (Latex) – poznany na zajęciach język do „profesjonalnego” składania tekstów,
+
 3. XML (Extensible Markup Language) - uniwersalnym języku znaczników przeznaczonym do
    reprezentowania różnych danych w ustrukturalizowany sposób.
+
+   
+
    Przykład kodu html i jego interpretacja w przeglądarce:
 
 <!DOCTYPE html>
@@ -21,6 +26,11 @@ umieszczanych w plikach tekstowych. Z pośród najbardziej popularnych można ws
 <p> Jakiś paragraf tekstu</p>
 </body>
 </html>
+
+![01](..\zad2\01.png)
+
+
+
 Przykład kodu Latex i wygenerowanego pliku w formacie pdf
 \documentclass[]{letter}
 \usepackage{lipsum}
@@ -35,7 +45,13 @@ Przykład kodu Latex i wygenerowanego pliku w formacie pdf
 \closing{Pozdrawiam}
 \end{letter}
 \end{document}
+
+![02](..\zad2\02.png)
+
+
+
 Przykład kodu XML – fragment dokumentu SVG (Scalar Vector Graphics)
+
 <!DOCTYPE html>
 <html>
 <body>
@@ -44,15 +60,22 @@ Przykład kodu XML – fragment dokumentu SVG (Scalar Vector Graphics)
 </svg>
 </body>
 </html>
+
+![03](..\zad2\03.png)
+
 W tym przypadku mamy np. znacznik np. <circle> opisujący parametry koła i który może być
 właściwie zinterpretowany przez dedykowaną aplikację (np. przeglądarki www).
+
 Jako ciekawostkę można podać fakt, że również pakiet MS Office wykorzystuje format XML do
 przechowywania informacji o dodatkowych parametrach formatowania danych. Na przykład pliki z
 rozszerzeniem docx, to nic innego jak spakowane algorytmem zip katalogi z plikami xml.
+
 $unzip -l test.docx
 Archive: test.docx
 Length Date Time Name
+
 --------- ---------- ----- ----
+
 573 2020-10-11 18:20 _rels/.rels
 731 2020-10-11 18:20 docProps/core.xml
 508 2020-10-11 18:20 docProps/app.xml
@@ -62,6 +85,9 @@ Length Date Time Name
 853 2020-10-11 18:20 word/fontTable.xml
 241 2020-10-11 18:20 word/settings.xml
 1374 2020-10-11 18:20 [Content_Types].xml
+
+
+
 Wszystkie te języki znaczników cechują się rozbudowaną i złożoną składnią i dlatego do ich edycji
 wymagają najczęściej dedykowanych narzędzi w postaci specjalizowanych edytorów. By
 wyeliminować powyższą niedogodność powstał Markdown - uproszczony język znaczników
@@ -90,16 +116,36 @@ opis w języku polskim.
 W tym celu używamy znaku kratki
 Lewe okno zawiera kod źródłowy – prawe -podgląd przetworzonego tekstu
 
+![04](..\zad2\04.png)
+
+
+
 ## Definiowanie list
+
+
+
+![05](..\zad2\05.png)
 
 Listy numerowane definiujemy wstawiając numery kolejnych pozycji zakończone kropką.
 Listy nienumerowane definiujemy znakami: *,+,-
 
+
+
 ## Wyróżnianie tekstu
+
+![06](..\zad2\06.png)
+
+
 
 ## Tabele
 
+![07](..\zad2\07.png)
+
+
+
 Centrowanie zawartości kolumn realizowane jest poprzez odpowiednie użycie znaku dwukropka:
+
+
 
 ## Odnośniki do zasobów
 
@@ -117,7 +163,15 @@ internetowych
 
 ## Kod źródłowy dla różnych języków programowania
 
+![08](..\zad2\08.png)
+
+
+
 ## Tworzenie spisu treści na podstawie nagłówków
+
+![09](..\zad2\09.png)
+
+
 
 # Edytory dedykowane
 
@@ -125,12 +179,14 @@ Pracę nad dokumentami w formacie Markdown( rozszerzenie md) można wykonywać w
 dowolnym edytorze tekstowym. Aczkolwiek istnieje wiele dedykowanych narzędzi
 
 1. Edytor Typora - https://typora.io/
-
 2. Visual Studio Code z wtyczką „markdown preview”
 
-  #  Pandoc – system do konwersji dokumentów Markdown do
+![10](..\zad2\10.png)
 
-  innych formatów
+
+
+  #  Pandoc – system do konwersji dokumentów Markdown do innych formatów
+
   Jest oprogramowanie typu open source służące do konwertowania dokumentów
   pomiędzy różnymi formatami.
   Pod poniższym linkiem można obejrzeć przykłady użycia:
@@ -138,9 +194,21 @@ dowolnym edytorze tekstowym. Aczkolwiek istnieje wiele dedykowanych narzędzi
   Oprogramowanie to można pobrać z spod adresu: https://pandoc.org/installing.html
   Jeżeli chcemy konwertować do formatu latex i pdf trzeba doinstalować oprogramowanie
   składu Latex (np. Na windows najlepiej sprawdzi się Miktex https://miktex.org/)
+
   Gdyby podczas konwersji do formatu pdf pojawił się komunikat o niemożliwości
   znalezienia programu pdflatex rozwiązaniem jest wskazanie w zmiennej środowiskowej
   PATH miejsca jego położenia
+
+![11](..\zad2\11.png)
+
+
+
+![12](..\zad2\12.png)
+
+![13](..\zad2\13.png)
+
+
+
   Pod adresem (https://gitlab.com/mniewins66/templatemn.git) znajduje się przykładowy plik
   Markdown z którego można wygenerować prezentację w formacie pdf wykorzystując
   klasę latexa beamer.
